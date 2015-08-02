@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="aPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ruleScreen3Controller">
+    <children>
+        <StackPane fx:id="sPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Button fx:id="backButton" prefHeight="43.0" prefWidth="119.0" mnemonicParsing="false" onAction="#handleBackButtonAction" text="Next" StackPane.alignment="BOTTOM_CENTER">
+                    <font>
+                        <Font size="22.0" name="Century Gothic Bold"/>
+                    </font>
+                </Button>
+                <Label fx:id="title" text="Rules" StackPane.alignment="TOP_CENTER">
+                    <font>
+                        <Font size="70.0" name="Century Gothic Bold"/>
+                    </font>
+                </Label>
+                <Label fx:id="text" text="${'&#x2022;How to Win:\n\n\t- Do not Be Eliminated from STEM Life\n\n\t- Graduate!'}" wrapText="true" StackPane.alignment="CENTER">
+                    <font>
+                        <Font size="35.0" name="Century Gothic Bold"/>
+                    </font>
+                </Label>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>

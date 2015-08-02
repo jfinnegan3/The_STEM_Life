@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="aPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.choiceScreenController">
+   <children>
+      <StackPane fx:id="sPane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="Result" StackPane.alignment="TOP_CENTER">
+               <font>
+                  <Font size="70.0" />
+               </font>
+            </Label>
+            <Button fx:id="returnButton" mnemonicParsing="false" prefHeight="43.0" prefWidth="119.0" onAction="#handleReturnButtonAction" text="Back" StackPane.alignment="BOTTOM_CENTER">
+               <StackPane.margin>
+                  <Insets bottom="20.0" />
+               </StackPane.margin>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Button>
+            <Label fx:id="choiceLabel" textAlignment="CENTER" wrapText="true" >
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="fearUpdateLabel" textAlignment="CENTER"  wrapText="true" >
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

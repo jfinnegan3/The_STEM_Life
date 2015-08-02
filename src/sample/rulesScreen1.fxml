@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="aPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ruleScreen1Controller">
+   <children>
+      <StackPane fx:id="sPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="backButton" prefHeight="43.0" prefWidth="119.0" mnemonicParsing="false" onAction="#handleBackButtonAction" text="Next" StackPane.alignment="BOTTOM_CENTER">
+             <font>
+                 <Font size="22.0" name="Century Gothic Bold"/>
+             </font>
+            </Button>
+             <Label fx:id="title" text="Rules" StackPane.alignment="TOP_CENTER">
+               <font>
+                  <Font size="70.0" name="Century Gothic Bold"/>
+               </font>
+            </Label>
+            <Label fx:id="text" text="${' &#x2022; Basic Information: \n\t- 4 players, each starting with predetermined of fears. \n\t- Representing student life: 4 year academic program and 2 terms. \n\t- Summers are checkpoints and you must stop to check-in with fears \n\t- Start # of fears: freshman-8, Sophomore-6, Junior-4, senior-2 \n\t- (if you have more than the start #of fears for the next term, you are\n\t  out of the STEM life!)'}" wrapText="true" StackPane.alignment="CENTER">
+               <font>
+                  <Font size="18.0" name="Century Gothic Bold"/>
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="aPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.questionScreenController">
+   <children>
+      <StackPane fx:id="sPane" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="200" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200">
+         <children>
+               <Label fx:id="questionLabel" text="Label" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER">
+                  <font>
+                     <Font size="22.0" />
+                  </font>
+               </Label>
+               <Label fx:id="titleLabel" text="Label" StackPane.alignment="TOP_CENTER">
+                  <font>
+                     <Font size="70.0" />
+                  </font>
+               </Label>
+               <Button fx:id="choice1Button" mnemonicParsing="false" onAction="#handleChoice1ButtonAction" prefHeight="43.0" prefWidth="150.0" text="Choice 1" StackPane.alignment="BOTTOM_CENTER">
+                  <StackPane.margin>
+                     <Insets bottom="20.0" right="200.0" />
+                  </StackPane.margin>
+                  <font>
+                     <Font size="22.0" />
+                  </font>
+               </Button>
+               <Button fx:id="choice2Button" mnemonicParsing="false" onAction="#handleChoice2ButtonAction" prefHeight="43.0" prefWidth="150.0" text="Choice 2" StackPane.alignment="BOTTOM_CENTER">
+                  <StackPane.margin>
+                     <Insets bottom="20.0" left="200.0" />
+                  </StackPane.margin>
+                  <font>
+                     <Font size="22.0" />
+                  </font>
+               </Button>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
